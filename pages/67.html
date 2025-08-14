@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six seeveennn</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+            background-color: #f0f4f8; /* Light background */
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            padding: 0;
+            position: relative; /* Needed for absolutely positioned children */
+        }
+        .staticTextItem {
+            position: absolute; /* Allows placing text at precise coordinates */
+            font-size: 2rem; /* Larger text for visibility */
+            font-weight: normal;
+            color: #00000; /* Blue text color */
+            user-select: none; /* Prevent text selection */
+            pointer-events: none; /* Allow clicks to pass through */
+            z-index: 10; /* Ensure text is visible */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            opacity: 0.8; /* Slightly transparent to see overlaps */
+            /*
+                Removed styles to make it look like standard text:
+                - padding
+                - border-radius
+                - background-color
+                - box-shadow
+            */
+        }
+    </style>
+</head>
+<body>
+<h1>made by gabriel ganev<h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /**
+             * Creates a new '6 7' element and places it at a random static position.
+             */
+            function addStaticRandomText() {
+                // Create a new div element
+                const newTextElement = document.createElement('div');
+                // Add the class for styling
+                newTextElement.classList.add('staticTextItem');
+                // Set the text content
+                newTextElement.textContent = '6 7';
+
+                // Get viewport dimensions
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+
+                // Temporarily add to DOM to get its dimensions
+                // This is important because offsetWidth/offsetHeight only work if element is in DOM
+                document.body.appendChild(newTextElement);
+
+                // Get the dimensions of the newly created text element
+                const textWidth = newTextElement.offsetWidth;
+                const textHeight = newTextElement.offsetHeight;
+
+                // Calculate max x and y to keep text fully within viewport
+                const maxX = Math.max(0, viewportWidth - textWidth);
+                const maxY = Math.max(0, viewportHeight - textHeight);
+
+                // Generate random positions
+                const randomX = Math.floor(Math.random() * maxX);
+                const randomY = Math.floor(Math.random() * maxY);
+
+                // Apply the random positions
+                newTextElement.style.left = `${randomX}px`;
+                newTextElement.style.top = `${randomY}px`;
+
+                // The element is already appended, no need to append again.
+                // It will now stay at this static random position.
+            }
+
+            // Start adding new text elements every 1 millisecond
+            // This will quickly fill the screen with static '6 7's
+            setInterval(addStaticRandomText, 1);
+
+            // Optional: Re-adjust text positions if the window is resized.
+            // Note: This will not move already placed static text,
+            // but will affect the calculation for new text being added.
+            // If you wanted existing text to also adjust, you'd need to store
+            // references to all created elements and loop through them here.
+            window.addEventListener('resize', () => {
+                // For demonstration, we'll just log that resize happened.
+                // New elements will adapt to new window size.
+                console.log('Window resized. New elements will adapt.');
+            });
+        });
+    </script>
+</body>
+</html>
