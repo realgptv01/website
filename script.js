@@ -35,7 +35,7 @@ if ((relURL == "index.html") || (relURL == ""))
 
 else
 {
-	assetsLocation = "../assets/";
+	assetsLocation = "assets/";
 }
 
 document.body.onload   = page_init;
@@ -658,3 +658,4 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
