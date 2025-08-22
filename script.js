@@ -94,25 +94,25 @@ const pageDetails =
 [
 	{
 		"name":      "About", 
-		"pageLink":  "../pages/about.html",
+		"pageLink":  "https://realgptv01.github.io/website/pages/about.html",
 		"labelLink": "aboutLabel.png",
 		"iconLink":  "question.png"
 	},
 	{
 		"name":      "Projects", 
-		"pageLink":  "../pages/projects.html",
+		"pageLink":  "https://realgptv01.github.io/website/pages/projects.html",
 		"labelLink": "projectsLabel.png",
 		"iconLink":  "gears.png"
 	},
 	{
 		"name":      "Videos",
-		"pageLink":  "../pages/videos.html",
+		"pageLink":  "https://realgptv01.github.io/website/pages/videos.html",
 		"labelLink": "videosLabel.png",
 		"iconLink":  "television.png"
 	},
 	{
 		"name":      "Music", 
-		"pageLink":  "../pages/music.html",
+		"pageLink":  "https://realgptv01.github.io/website/pages/music.html",
 		"labelLink": "musicLabel.png",
 		"iconLink":  "musicnote.png"
 	},
@@ -658,4 +658,5 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
 
