@@ -95,26 +95,26 @@ const pageDetails =
 	{
 		"name":      "About", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/about.html",
-		"labelLink": "aboutLabel.png",
-		"iconLink":  "question.png"
+		"labelLink": "https://realgptv01.github.io/website/pages/assets/aboutLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/pages/assets/question.png"
 	},
 	{
 		"name":      "Projects", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/projects.html",
-		"labelLink": "projectsLabel.png",
-		"iconLink":  "gears.png"
+		"labelLink": "https://realgptv01.github.io/website/pages/assets/projectsLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/pages/assets/gears.png"
 	},
 	{
 		"name":      "Videos",
 		"pageLink":  "https://realgptv01.github.io/website/pages/videos.html",
-		"labelLink": "videosLabel.png",
-		"iconLink":  "television.png"
+		"labelLink": "https://realgptv01.github.io/website/pages/assets/videosLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/pages/assets/television.png"
 	},
 	{
 		"name":      "Music", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/music.html",
-		"labelLink": "musicLabel.png",
-		"iconLink":  "musicnote.png"
+		"labelLink": "https://realgptv01.github.io/website/pages/assets/musicLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/pages/assets/musicnote.png"
 	},
 ];
 
@@ -658,5 +658,6 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
 
 
