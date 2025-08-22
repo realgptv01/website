@@ -29,8 +29,8 @@ let pagesLocation = "";
 
 if ((relURL == "index.html") || (relURL == ""))
 {
-	assetsLocation = "https://realgptv01.github.io/website/assets/";
-	pagesLocation = "https://realgptv01.github.io/website/pages/";
+	assetsLocation = "";
+	pagesLocation = "";
 }
 
 else
@@ -94,27 +94,27 @@ const pageDetails =
 [
 	{
 		"name":      "About", 
-		"pageLink":  "about.html",
-		"labelLink": "aboutLabel.png",
-		"iconLink":  "question.png"
+		"pageLink":  "https://realgptv01.github.io/website/pages/about.html",
+		"labelLink": "https://realgptv01.github.io/website/assets/aboutLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/question.png"
 	},
 	{
 		"name":      "Projects", 
-		"pageLink":  "projects.html",
-		"labelLink": "projectsLabel.png",
-		"iconLink":  "gears.png"
+		"pageLink":  "https://realgptv01.github.io/website/pages/projects.html",
+		"labelLink": "https://realgptv01.github.io/website/assets/projectsLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/gears.png"
 	},
 	{
 		"name":      "Videos",
-		"pageLink":  "videos.html",
-		"labelLink": "videosLabel.png",
-		"iconLink":  "television.png"
+		"pageLink":  "https://realgptv01.github.io/website/pages/videos.html",
+		"labelLink": "https://realgptv01.github.io/website/assets/videosLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/television.png"
 	},
 	{
 		"name":      "Music", 
-		"pageLink":  "music.html",
-		"labelLink": "musicLabel.png",
-		"iconLink":  "musicnote.png"
+		"pageLink":  "https://realgptv01.github.io/website/pages/music.html",
+		"labelLink": "https://realgptv01.github.io/website/assets/musicLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/musicnote.png"
 	},
 ];
 
@@ -658,6 +658,7 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
 
 
 
