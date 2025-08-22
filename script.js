@@ -29,8 +29,8 @@ let pagesLocation = "";
 
 if ((relURL == "index.html") || (relURL == ""))
 {
-	assetsLocation = "assets/";
-	pagesLocation = "pages/";
+	assetsLocation = "https://realgptv01.github.io/website/assets/";
+	pagesLocation = "https://realgptv01.github.io/website/pages/";
 }
 
 else
@@ -95,26 +95,26 @@ const pageDetails =
 	{
 		"name":      "About", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/about.html",
-		"labelLink": "https://realgptv01.github.io/website/pages/assets/aboutLabel.png",
-		"iconLink":  "https://realgptv01.github.io/website/pages/assets/question.png"
+		"labelLink": "https://realgptv01.github.io/website/assets/aboutLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/question.png"
 	},
 	{
 		"name":      "Projects", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/projects.html",
-		"labelLink": "https://realgptv01.github.io/website/pages/assets/projectsLabel.png",
-		"iconLink":  "https://realgptv01.github.io/website/pages/assets/gears.png"
+		"labelLink": "https://realgptv01.github.io/website/assets/projectsLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/gears.png"
 	},
 	{
 		"name":      "Videos",
 		"pageLink":  "https://realgptv01.github.io/website/pages/videos.html",
-		"labelLink": "https://realgptv01.github.io/website/pages/assets/videosLabel.png",
-		"iconLink":  "https://realgptv01.github.io/website/pages/assets/television.png"
+		"labelLink": "https://realgptv01.github.io/website/assets/videosLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/television.png"
 	},
 	{
 		"name":      "Music", 
 		"pageLink":  "https://realgptv01.github.io/website/pages/music.html",
-		"labelLink": "https://realgptv01.github.io/website/pages/assets/musicLabel.png",
-		"iconLink":  "https://realgptv01.github.io/website/pages/assets/musicnote.png"
+		"labelLink": "https://realgptv01.github.io/website/assets/musicLabel.png",
+		"iconLink":  "https://realgptv01.github.io/website/assets/musicnote.png"
 	},
 ];
 
@@ -658,6 +658,7 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
 
 
 
