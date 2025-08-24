@@ -99,22 +99,10 @@ const pageDetails =
 		"iconLink":  "question.png"
 	},
 	{
-		"name":      "Education",
-		"pageLink":  "education.html",
-		"labelLink": "educationLabel.png", 
-		"iconLink":  "education.png"
-	},
-	{
 		"name":      "Projects", 
 		"pageLink":  "projects.html",
 		"labelLink": "projectsLabel.png",
 		"iconLink":  "gears.png"
-	},
-	{
-		"name":      "Writings", 
-		"pageLink":  "writings.html",
-		"labelLink": "writingsLabel.png",
-		"iconLink":  "book.png"
 	},
 	{
 		"name":      "Videos",
@@ -670,6 +658,7 @@ footer.innerHTML += "<img src=\"" + footerImg + "\" alt=\"ZS\">";
 
 check_layout();
 update_dark_mode();
+
 
 
 
